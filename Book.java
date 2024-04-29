@@ -11,7 +11,6 @@ public class Book
     // The fields.
     private String author;
     private String title;
-    private int pages;
     private int borrowed;
     private boolean isBorrowed;
 
@@ -19,11 +18,10 @@ public class Book
      * Set the author, title, and number of pages
      * fields when this object is constructed.
      */
-    public Book(String bookAuthor, String bookTitle, int numberPages)
+    public Book(String bookAuthor, String bookTitle)
     {
         author = bookAuthor;
         title = bookTitle;
-        pages = numberPages;
         borrowed = 0;
         isBorrowed = false;
     }
@@ -37,11 +35,6 @@ public class Book
     public String getTitle() //consulta el titulo del libro.
     {
         return title;
-    }
-    
-    public int getPages() //consulta cuantas paginas tiene el libro.
-    {
-        return pages;
     }
     
     public int getBorrowed() //consulta cuantas veces se presto.
